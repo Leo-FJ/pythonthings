@@ -188,27 +188,64 @@
 
 #       #       import og datetime
 # import datetime
-## import datetime as time
+# # import datetime as time
 
 # x = datetime.datetime(2018, 6, 1)
 
-# print(x.strftime("%c"))
-#%a dagen i kort form, %A fuld version af dagen, 
-#%d dagen af måneden
-#%b kort version af måneden, %B fuld version af måneden
-#%Y fulde år, %y kort år fx: 2018 bliver til 18
-#%H timen, %M minut, %S sekund, %Z tidszone, 
-#%j dag af året, %W uge nr(mandag første dag)
-#%c dag, måned, klokken, år
+# # print(x.strftime("%c"))
+# #%a dagen i kort form, %A fuld version af dagen, 
+# #%d dagen af måneden
+# #%b kort version af måneden, %B fuld version af måneden
+# #%Y fulde år, %y kort år fx: 2018 bliver til 18
+# #%H timen, %M minut, %S sekund, %Z tidszone, 
+# #%j dag af året, %W uge nr(mandag første dag)
+# #%c dag, måned, klokken, år
 
 # #------------------------------------------------
 
 #       #       regex
-#alt står her: https://www.w3schools.com/python/python_regex.asp
+# #alt står her: https://www.w3schools.com/python/python_regex.asp
 
+# #------------------------------------------------
 
+#       #       Collections (Arrays) --> List, Tuple, Set, Dictionary
+#   #   Tuple
+# #Tuple bliver brugt til at gemme på flere items i en variable, og den kan ikke laves om på når den først er lavet og tillader duplicates
+# mytuple = ("Car", "Plane", "Ship")
+# print(mytuple)
+# print(type(mytuple))
 
+# thistuple = ("apple",)
+# print(type(thistuple))
+# #Ikke en tuple husk komma til sidst.
+# thistuple = ("apple")
+# print(type(thistuple)) 
 
+#   #   List
+# #Lister er sat i en bestemt rækkefølge(kan laves om på med nogle methods), kan laves om på efter de er lavet og tillader duplicates
+# mylist = ["Car", "Plane", "Ship"]
+# print(mylist)
+# print(type(mylist))
+# #Tilføjer en ny bagerst i rækken.
+# mylist.append(32)
+# print(mylist)
+
+#   #   Sets
+# #Sets er ikke i en rækkefølge, du kan ikke ændre på dem(andet end at fjerne og tilføje items) og tillader ikke nogle duplicates
+# myset = {"Car", "Plane", "Submarine", "Ship"}
+# print(myset)
+# #True og 1 bliver set som samme value sammed med False og 0
+# thisset = {"apple", "banana", "cherry", True, 1, 2, False, 0}
+# print(thisset)
+
+#   #   Dictionaries
+# #Dictionaries bliver brugt til at gemme på key:value pairs, dictionaries har en rækkefølge, kan laves om på og tillader ikke duplicates
+# thisdict =	{
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict)
 
 
 # def main():
