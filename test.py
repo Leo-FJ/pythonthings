@@ -205,17 +205,17 @@
 
 #       #       regex
 # #alt står her: https://www.w3schools.com/python/python_regex.asp
-import re
+#import re
 
-teststring = '''Hej med dig!
-                72 år gammel Bent.'''
-#\w*\w[\w*\w!.] find correct, but maybe a bit long
-#\w*\W finds all, but with a new line, and tab spaces if introduced
-#\w*\W\S+ finds all, but groups "Hej" and "med" together
-#\S+ finds all, and leaves them seperate, as the first one
-test = '\S+'
-x = re.findall(test, teststring)
-print(x)
+#teststring = '''Hej med dig!
+#                72 år gammel Bent.'''
+# #\w*\w[\w*\w!.] find correct, but maybe a bit long
+# #\w*\W finds all, but with a new line, and tab spaces if introduced
+# #\w*\W\S+ finds all, but groups "Hej" and "med" together
+# #\S+ finds all, and leaves them seperate, as the first one
+# #patteren = '\S+'
+#x = re.findall(patteren, teststring)
+#print(x)
 
 # #------------------------------------------------
 
