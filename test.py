@@ -205,6 +205,15 @@
 
 #       #       regex
 # #alt står her: https://www.w3schools.com/python/python_regex.asp
+# #email finder
+# #(\S+\@\S+)
+
+# #email finder, but finds the email in the last group, 
+# #and sets all text before it in another group, and anything after the email will not be found, 
+# #unless another mail is after the next text. And only works when somethign like: "x@x" sign is present.
+# #((?:[^\n]+?\n)*?)(\S+?\@\S+)
+
+
 #import re
 
 #teststring = '''Hej med dig!
