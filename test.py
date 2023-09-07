@@ -210,7 +210,7 @@
 
 # #email finder, but finds the email in the last group, 
 # #and sets all text before it in another group, and anything after the email will not be found, 
-# #unless another mail is after the next text. And only works when somethign like: "x@x" sign is present.
+# #unless another mail is after the next text. And only works when something  like: "x@x" sign is present.
 # #((?:[^\n]+?\n)*?)(\S+?\@\S+)
 
 
@@ -268,8 +268,10 @@
 # print(thisdict)
 
 
-# def main():
-#     pass
-
 # if __name__ == "__main__":
 #     main()
+
+
+##import os
+##os.system('clear') - works on bash or macOSX systems
+##os.system('clr') - works only on windows
