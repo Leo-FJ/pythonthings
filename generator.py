@@ -7,7 +7,7 @@ import time
 def main():
     while(True):
         #clears screen
-        os.system('cls')
+        os.system('clear')
         #gives us the length of the password
         try:
             length = int(input('How long do you want the password: '))
