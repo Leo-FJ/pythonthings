@@ -3,7 +3,7 @@ import os
 
 def main():
     while(True):
-        os.system('cls')
+        os.system('clear')
         
         dice1 = random.randint(1, 6)
         dice2 = random.randint(1, 6)
