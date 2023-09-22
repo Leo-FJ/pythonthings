@@ -1,4 +1,4 @@
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       Anagram, input og sorted
 # def Anagram():
@@ -15,7 +15,7 @@
 #     else:
 #         print('det er forkert')
     
-# #------------------------------------------------    
+# #------------------------------------------------------------------------------------------------------------------------------------------------
     
 #       #       Convert Celsius to Fahrenheit, try and exception
 # def Celsius():
@@ -30,7 +30,7 @@
 #     except:
 #         print('Du skrev nok noget forkert, prøv igen')
     
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       FizzBuzz, Loops og Conditions
 # def FizzBuzz():
@@ -48,7 +48,7 @@
 #         else:
 #             print(x)
     
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       Noget med classer, Class
 # class Person:
@@ -61,7 +61,7 @@
 # print(p1.name)
 # print(p1.age) 
 
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       Mere med classer, Function in class
 # class Person():
@@ -78,7 +78,7 @@
 # People = Person('Bodil', 72, 'Denmark')
 # People.Introduction()
  
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       Class inheritance
 #       #   Første eksempel:  
@@ -117,7 +117,7 @@
 # x = Student("Jakob", "Olsen")
 # x.printname()
 
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       Class Polymorphism
 #       #   Første eksempel:  
@@ -174,7 +174,6 @@
 # class Plane(Vehicle):
 #   def move(self):
 #     print("Fly!")
-
 # car1 = Car("Ford", "Mustang") #Create a Car object
 # boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
 # plane1 = Plane("Boeing", "747") #Create a Plane object
@@ -184,7 +183,21 @@
 #   print(x.model)
 #   x.move()
 
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
+
+#       #       Class variables, classmethod
+#import random
+
+#class Hat:
+#    houses = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin']
+#
+#    @classmethod
+#    def sort(cls, name):
+#        print(f'{name} is in {random.choice(cls.houses)}')
+#
+#Hat.sort('Ron')
+
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       import og datetime
 # import datetime
@@ -201,11 +214,11 @@
 # #%j dag af året, %W uge nr(mandag første dag)
 # #%c dag, måned, klokken, år
 
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       regex
 # #alt står her: https://www.w3schools.com/python/python_regex.asp
-# #email finder
+# #basic email finder
 # #(\S+\@\S+)
 
 # #email finder, but finds the email in the last group, 
@@ -217,7 +230,7 @@
 #import re
 
 #teststring = '''Hej med dig!
-#                72 år gammel Bent.'''
+#               72 år gammel Bent.'''
 # #\w*\w[\w*\w!.] find correct, but maybe a bit long
 # #\w*\W finds all, but with a new line, and tab spaces if introduced
 # #\w*\W\S+ finds all, but groups "Hej" and "med" together
@@ -226,7 +239,7 @@
 #x = re.findall(patteren, teststring)
 #print(x)
 
-# #------------------------------------------------
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 #       #       Collections (Arrays) --> List, Tuple, Set, Dictionary
 #   #   Tuple
@@ -267,11 +280,53 @@
 # }
 # print(thisdict)
 
+# #------------------------------------------------------------------------------------------------------------------------------------------------
+
+#       #       Map
+
+# Understanding - its syntax is map(function, iterable). The function doesn't need to be a function.
+#But can be something like list, int, string... you can do it like that to convert something to your desired type
+#1st example is of it using a fucntion and then adding 2 variables together, 2nd example is of converting from string to int, and then formatting it into a string again.
+
+# def myfunc(a, b):
+#   return a + b
+
+# x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
+
+# print(x)
+
+# convert the map into a list, for readability:
+# print(list(x))
+
+
+
+
+# def high_and_low(numbers):    
+#     digits = list(map(int, numbers.split(' ')))
+#     low = min(digits)
+#     high = max(digits)
+    
+#     return ('{} {}'.format(high, low))
+#     #string below does the same thing without the low and high variables.
+#     #return ('{} {}'.format(max(digits), min(digits)))
+# high_and_low('8 3 -5 42 -1 0 0 -9 4 7 4 -4')
+
+
+
+
+
+
+
+
+
+
+
+
 
 # if __name__ == "__main__":
 #     main()
 
 
 ##import os
-##os.system('clear') - works on bash or macOSX systems
+##os.system('clear') - works on bash(something like linux) or macOSX systems
 ##os.system('clr') - works only on windows
