@@ -330,10 +330,17 @@
 #     out.append(letter.upper() + letter.lower()*(count))
 # print('-'.join(out))
 
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
+#       #       Number to binary converter
 
+#def add_binary(a,b):
+#    # {} - makes it into a string
+#    # a+b - adds the 2 numbers together
+#    # :b - formats it as a binary number
+#    return f'{a+b:b}'
 
-
+#print(add_binary(3,8))
 
 
 
