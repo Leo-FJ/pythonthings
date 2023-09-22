@@ -311,9 +311,24 @@
 #     #return ('{} {}'.format(max(digits), min(digits)))
 # high_and_low('8 3 -5 42 -1 0 0 -9 4 7 4 -4')
 
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
+#       #       Enumerator
 
+#enumerate takes a object and either takes it from letter to letter and kinda assigns a number to each with a list(can most likely be used with other things)
 
+##test string
+# s1 = "geekdpi"
+##list variable where we will append to with the various letters
+# out = []
+# print(list(s1))
+##for show about how enumerate works and why we can have 2 variables with it in the for-loop
+# print(list(enumerate(s1)))
+##it makes a count for each letter: g-0 e-1 e-2 k-3 d-4 p-5 i-6 and takes the number and says fx: 1*6=6, so 6 extra lowercase i and the one uppercase from the start. 
+##Then you join a - on the out vairable, which means you get the correct number and format for the codewars problem Mumbling(kata 7)
+# for count, letter in enumerate(s1):
+#     out.append(letter.upper() + letter.lower()*(count))
+# print('-'.join(out))
 
 
 
