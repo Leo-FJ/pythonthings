@@ -342,7 +342,17 @@
 
 #print(add_binary(3,8))
 
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
+#       #       import string
+
+#import string
+
+#sentence = 'Hey, how are you doing today?'
+
+#sentence_capatalized = sentence.capwords
+
+#print(sentence_capatalized)
 
 
 # if __name__ == "__main__":
