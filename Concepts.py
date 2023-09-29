@@ -344,15 +344,46 @@
 
 # #------------------------------------------------------------------------------------------------------------------------------------------------
 
-#       #       import string
+#       #       Substring
 
-#import string
+## syntax: string[start:end:step]
 
-#sentence = 'Hey, how are you doing today?'
+##Examples:
 
-#sentence_capatalized = sentence.capwords
+##Get first 5 chars
+#string = "freeCodeCamp"
+## [0:5] is the same as [:5]
+#print(string[:5])
+## <<<<<< freeC
 
-#print(sentence_capatalized)
+##get 4 chars starting from 3rd char(index starts at 0)
+#string = "freeCodeCamp"
+#print(string[2:6])
+##<<<<<<< eeCo
+
+##Get last char
+#string = "freeCodeCamp"
+#print(string[-1])
+##<<<<<<< p
+##[:-1] is everything other than the last char
+##[:-x] x should be a number, but gives you the last x chars
+
+##every other char
+#string = "freeCodeCamp"
+#print(string[::2])
+
+##reverse the string
+#string = "freeCodeCamp"
+#print(string[::-1])
+
+
+
+
+
+
+
+
+
 
 
 # if __name__ == "__main__":
