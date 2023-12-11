@@ -336,10 +336,10 @@ def return_statement():
     print('Explanation:')
     print('this can get 3 if else statements, normal example:\n')
     print('''if x < 2: return x
-             elif x >= 2 and x < 10: return x
-             else: return x''')
+elif x >= 2 and x < 10: return x
+else: return x''')
 
-    print('Example/The way to do it in 1 line:')
+    print('\n\nExample/The way to do it in 1 line:')
     print(f'return n*100 if n < 5 else n*95 if n>= 5 and n < 10 else n*90')
     print('The statement is split up like this:')
     print('return n*100 if n < 5 ||| else n*95 if n>= 5 and n < 10 ||| else n*90')
@@ -400,6 +400,27 @@ def url():
         x = re.findall(patteren, url)
         return x[0]
 
+# #------------------------------------------------------------------------------------------------------------------------------------------------
+
+#       #       Remove_words
+
+def Remove_Words():
+    print('Explanation:')
+    print('Removes everything that is included in the string\n')
+    print('Example:')
+    print('text = "hej med dig!#/(%) hvordan har du det?"')
+    print('text = text.translate({ord(i): None for i in '"!#¤%&/()=@£€?´`+<>\,.;:-_^¨|{}[]'})")
+    print(f'Resultat: hej med dig hvordan har du det')
+##<<<<<<<<<<<Output
+
+# #------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 from os import system
@@ -407,9 +428,32 @@ from os import system
 def main():
     loop = True
     while loop == True:
+        system('clear')
+        print('''rstrip,
+ord_chr,
+swapcase,
+substring,
+count_length,
+find_start_end,
+str_is,,
+split_list,
+abs,
+rounding,
+binary,
+regex,
+url,
+tuple,
+set,
+list,
+dict,
+enumerator,
+map,
+str_to_int_list,
+3_return_statement,
+remove_words''')
         print('Enter what you want to take a look at: ')
         x = input().lower()
-        ##os.system('clear') - works on bash(something like linux) or macOSX systems
+        ##os.system('clear') - works on bash systems(something like linux) or macOSX systems
         ##os.system('clr') - works only on windows
         system('clear')
         match x:
@@ -443,6 +487,9 @@ def main():
             #regex
             case 'regex':
                 regex()
+            #find url names with regex
+            case 'url':
+                url()
             #-------------------------------------------
             #Collections
             case 'tuple':
@@ -466,15 +513,13 @@ def main():
             case 'str_to_int_list':
                 str_to_int_list()
             #-------------------------------------------
-            #find url names with regex
-            case 'url':
-                url()
-            #-------------------------------------------
             #3 if statements in 1 return example
             case '3_return_statement':
                 return_statement()
-            case '':
-                pass
+            #-------------------------------------------
+            #remove every charachter there is in the string
+            case 'remove_words':
+                Remove_Words()
             case '':
                 pass
             case '':
@@ -506,3 +551,5 @@ def Name():
 ##<<<<<<<<<<<Output
 
 # #------------------------------------------------------------------------------------------------------------------------------------------------
+
+
