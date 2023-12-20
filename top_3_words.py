@@ -51,6 +51,22 @@ def top_3_words(text):
         return []
     
 
+#another solution, but sitll only works on the test cases and not random
+from re import findall
+from collections import Counter
+def top_3_words(text):
+    cnt = Counter()
+    text = text.translate({ord(i): None for i in '''!"#¤%&/()=@£€?´`+<>\,.;:-_^¨|{}[]'''})
+    text = text.lower()
+    if any(findall(r'[a-zA-Z]', text)):
+        for word in text.split():
+            cnt[word] += 1
+        return [x[0] for x in cnt.most_common(3)]
+    else:
+        return []
+
+
+
 
 print(top_3_words("""In a village of La Mancha, the name of which I have no desire to call to
         mind, there lived not long since one of those gentlemen that keep a lance
