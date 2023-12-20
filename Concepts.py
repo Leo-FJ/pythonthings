@@ -415,6 +415,20 @@ def Remove_Words():
 
 # #------------------------------------------------------------------------------------------------------------------------------------------------
 
+#       #       last_list_elements
+
+def last_list_elements():
+    print('Explanation:')
+    print('We want to get the last 3 elements out from a list\n')
+
+    print('Example:')
+    signature = [1,2,3,4,5,6,7,8,9]
+    res = signature[-3:]
+    print(f'signature = [1,2,3,4,5,6,7,8,9] \nres = signature[-3:] \nresult:')
+    print(res)
+##<<<<<<<<<<<Output
+
+# #------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -450,7 +464,8 @@ enumerator,
 map,
 str_to_int_list,
 3_return_statement,
-remove_words''')
+remove_words,
+last_list_elements''')
         print('Enter what you want to take a look at: ')
         x = input().lower()
         ##os.system('clear') - works on bash systems(something like linux) or macOSX systems
@@ -520,8 +535,8 @@ remove_words''')
             #remove every charachter there is in the string
             case 'remove_words':
                 Remove_Words()
-            case '':
-                pass
+            case 'last_list_elements':
+                last_list_elements()
             case '':
                 pass
             case '':
