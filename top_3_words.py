@@ -51,8 +51,7 @@ def top_3_words(text):
         return []
     
 
-#a solution, that is correct the whole way through
-from re import findall
+#another solution, but still only works on the test cases and not randomfrom re import findall
 from collections import Counter
 def top_3_words(text):
     cnt = Counter()
